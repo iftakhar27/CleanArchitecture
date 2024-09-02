@@ -16,7 +16,7 @@
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">WhiteLagoon.Web</a>
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><img src="~/images/resort.png" style="width:35px"/></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -39,13 +39,15 @@
     </header>
     <div class="container">
         <main role="main" class="pb-3">
+            <div class="loading spinner" style="display:none;"></div>
+            <partial name="_Notification" />
             @RenderBody()
         </main>
     </div>
 
     <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2024 - WhiteLagoon.Web - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+       <div class="container text-center">
+            Made with <i class="bi bi-heart-fill"></i> by Ifti
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
